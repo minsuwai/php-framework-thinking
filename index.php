@@ -1,13 +1,10 @@
 <?php
 
-require "functions.php";
-require "database/Connection.php";
-require "database/QueryBuilder.php";
-
-
-$query = new QueryBuilder(Connection::make());
+require "bootstrap.php";
 
 // fetch all todos
-$tasks = $query->selectAll('tasks');
+$users = $query->selectAll('users');
+
+dd($users);
 
 require "index.view.php";
