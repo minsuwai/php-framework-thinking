@@ -1,10 +1,5 @@
 <?php
 
-require "bootstrap.php";
+require "core/bootstrap.php";
 
-// fetch all todos
-$users = $query->selectAll('users');
-
-dd($users);
-
-require "index.view.php";
+require "controllers/AboutController.php";
