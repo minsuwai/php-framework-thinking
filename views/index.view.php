@@ -19,6 +19,8 @@
         }
         ?>
     <?php endforeach; ?>
+
+    <a href="/contactus">Contact</a>
 </body>
 
 </html>
