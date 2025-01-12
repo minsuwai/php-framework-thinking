@@ -13,10 +13,10 @@ This is a simple PHP framework for learning and understanding the basics of rout
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/yourusername/php-framework-thinking.git
+   git clone [https://github.com/yourusername/php-framework-thinking.git](https://github.com/minsuwai/php-framework-thinking)
    ```
 
-   Make sure to replace `https://github.com/yourusername/php-framework-thinking.git` with the actual URL of your repository.
+   Make sure to replace `[https://github.com/yourusername/php-framework-thinking.git](https://github.com/minsuwai/php-framework-thinking)` with the actual URL of your repository.
 
 2. Navigate to the project directory:
 
@@ -41,11 +41,3 @@ This is a simple PHP framework for learning and understanding the basics of rout
 - : Contains the controller files.
 
 ## Defining Routes
-
-Routes are defined in the file. Here is an example:
-
-```php
-$router->get('', 'controllers/index.php');
-$router->get('about', 'controllers/about.php');
-$router->post('contact', 'controllers/contact.php');
-```
