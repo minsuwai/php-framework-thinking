@@ -13,10 +13,10 @@ This is a simple PHP framework for learning and understanding the basics of rout
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/minsuwai/php-framework-thinking
+   git clone https://github.com/yourusername/php-framework-thinking.git
    ```
 
-   Make sure to replace `https://github.com/minsuwai/php-framework-thinking` with the actual URL of your repository.
+   Make sure to replace `https://github.com/yourusername/php-framework-thinking.git` with the actual URL of your repository.
 
 2. Navigate to the project directory:
 
