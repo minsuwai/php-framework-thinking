@@ -1,16 +1,12 @@
 <?php require 'partials/header.php'; ?>
 
-<h1>Tasks</h1>
+<h1>Enter your name</h1>
 
-<?php foreach ($tasks as $task) : ?>
-    <?php
-    if ($task->complete) {
-        echo "<strike>$task->description</strike><br>";
-    } else {
-        echo $task->description . "<br>";
-    }
-    ?>
-<?php endforeach; ?>
+<form action="/names" method="POST">
+    <input type="text" name="name">
+    <button type="submit" value="submit">Submit</button>
+</form>
 
-<a href="/contactus">Contact</a>
+
+
 <?php require 'partials/footer.php'; ?>
