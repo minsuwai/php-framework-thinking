@@ -1,3 +1,7 @@
 <?php
 
-dd($_POST['name']);
+$query->insert([
+    'name' => $_POST['name']
+], 'users');
+
+header('Location: /');

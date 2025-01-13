@@ -1,5 +1,13 @@
 <?php require 'partials/header.php'; ?>
 
+<h1>Usernames</h1>
+
+<?php foreach ($users as $user) : ?>
+
+    <li><?= $user->name; ?></li>
+
+<?php endforeach; ?>
+
 <h1>Enter your name</h1>
 
 <form action="/names" method="POST">
