@@ -8,8 +8,8 @@
 //     'names' => 'controllers/AddNameController.php'
 // ]);
 
-$router->get('', 'controllers/IndexController.php');
-$router->get('about', 'controllers/AboutController.php');
-$router->get('contactus', 'controllers/ContactController.php');
+$router->get('', 'PagesController@home');
+$router->get('about', 'PagesController@about');
+$router->get('contact', 'PagesController@contact');
 
-$router->post('names', 'controllers/AddNameController.php');
+$router->post('names', 'PagesController@createUser');

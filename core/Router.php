@@ -30,9 +30,16 @@ class Router
 
     public function direct($uri, $method)
     {
-        if (array_key_exists($uri, $this->routes[$method])) {
-            return $this->routes[$method][$uri];
+        if (!array_key_exists($uri, $this->routes[$method])) {
+            die('404 Page Not Found');
         }
-        die('404 Page Not Found');
+        $makeDir = explode('@', $this->routes[$method][$uri]);
+        $this->callAction($makeDir[0], $makeDir[1]);
+    }
+
+    public function callAction($class, $method)
+    {
+        $myClass = new $class;
+        $myClass->$method();
     }
 }
