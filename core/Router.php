@@ -33,7 +33,7 @@ class Router
         if (!array_key_exists($uri, $this->routes[$method])) {
             die('404 Page Not Found');
         }
-        $makeDir = explode('@', $this->routes[$method][$uri]);
+        $makeDir = $this->routes[$method][$uri];
         $this->callAction($makeDir[0], $makeDir[1]);
     }
 

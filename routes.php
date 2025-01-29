@@ -8,8 +8,16 @@
 //     'names' => 'controllers/AddNameController.php'
 // ]);
 
-$router->get('', 'PagesController@home');
-$router->get('about', 'PagesController@about');
-$router->get('contact', 'PagesController@contact');
+use controllers\PagesController;
 
-$router->post('names', 'PagesController@createUser');
+// $router->get('', 'PagesController@home');
+// $router->get('about', 'PagesController@about');
+// $router->get('contact', 'PagesController@contact');
+
+// $router->post('names', 'PagesController@createUser');
+
+$router->get('', [PagesController::class, 'home']);
+$router->get('about', [PagesController::class, 'about']);
+$router->get('contact', [PagesController::class, 'contact']);
+
+$router->post('names', [PagesController::class, 'createUser']);
